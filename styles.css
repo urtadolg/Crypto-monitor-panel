@@ -1,0 +1,104 @@
+:root{
+    --pannel-background-color: #0E1A03;
+    --text-primary-color: white;
+    --text-positiveChange-color: #00FF4C;
+    --text-negativeChange-color: #FF0000;
+    --text-updatingChange-color: #d9ff00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-primary-color);
+    font-family: Open Sans, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.panel {
+    background-color: var(--pannel-background-color);
+    height: 237px;
+    height: fit-content;
+    width: 480px;
+    padding: 20px 58px 30px 58px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.dropdown{
+    width: 10px;
+height: 9px;
+background: transparent url('img/Polygon\ 1.svg') 0% 0% no-repeat padding-box;
+}
+.currencySelection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 33px;
+    line-height: 45px;
+    margin-bottom: 17px;
+}
+.firstCurrency{
+margin-left: 10px;
+}
+.secondCurrency{
+margin-right: 10px;
+}
+.to{
+    font-size: 25px;
+    margin: 0 28px;
+}
+.currencyValues{
+    font-size: 25px;
+    line-height: 45px;
+    margin-bottom: 27px;
+    align-self: flex-start;
+}
+.change-lastHour, .change-lastMin{
+    font-size: 16px;
+    line-height: 22px;
+    align-self: flex-start;
+}
+.change-lastHour{
+    margin-bottom: 10px;
+}
+.changeLabelHour{
+    margin-right: 34px;
+}
+.changeLabelMin{
+    margin-right: 42px;
+}
+.lastHourChangeValue{
+    color: var(--text-positiveChange-color);
+}
+.lastMinChangeValue{
+    color: var(--text-negativeChange-color);
+}
+
+.positiveChange {
+    color: var(--text-positiveChange-color);
+}
+.negativeChange {
+    color: var(--text-negativeChange-color);
+}
+.updatingChange {
+    color: var(--text-updatingChange-color);
+}
+
+.graph{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    margin-top: 30px;
+}
+.graph p {
+    color: grey;
+}
